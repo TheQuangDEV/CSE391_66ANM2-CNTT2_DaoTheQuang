@@ -1,0 +1,56 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #fff;
+}
+
+.container {
+  width: 95%;
+  margin: auto;
+}
+
+.title {
+  background: #9ee7f5;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.section {
+  border: 1px solid #2a8bdc;
+  padding: 10px;
+}
+
+.section-title {
+  color: red;
+  margin-bottom: 15px;
+}
+
+.course-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.course {
+  width: 32%;
+  border: 1px solid #ddd;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.course img {
+  width: 100%;
+  height: auto;
+}
+
+.course h4 {
+  margin: 10px 0;
+}
+
+.course p {
+  font-size: 14px;
+}
+
+.course ul {
+  padding-left: 18px;
+  font-size: 14px;
+}

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Quản lý điểm sinh viên nâng cao</title>
+    <link rel="stylesheet" href="style42.css" />
+  </head>
+
+  <body>
+    <h2>Quản lý điểm sinh viên</h2>
+
+    <div class="form">
+      <input type="text" id="hoten" placeholder="Nhập họ tên" />
+      <input type="number" id="diem" placeholder="Nhập điểm (0-10)" />
+      <button id="btnThem">Thêm</button>
+    </div>
+
+    <div class="tools">
+      <input type="text" id="search" placeholder="Tìm kiếm sinh viên..." />
+
+      <select id="filter">
+        <option value="all">Tất cả</option>
+        <option value="Giỏi">Giỏi</option>
+        <option value="Khá">Khá</option>
+        <option value="Trung bình">Trung bình</option>
+        <option value="Yếu">Yếu</option>
+      </select>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>STT</th>
+          <th>Họ tên</th>
+          <th id="sortScore" style="cursor: pointer">
+            Điểm <span id="arrow"></span>
+          </th>
+          <th>Xếp loại</th>
+          <th>Thao tác</th>
+        </tr>
+      </thead>
+
+      <tbody id="tableBody"></tbody>
+    </table>
+
+    <p id="noResult" style="display: none">Không có kết quả</p>
+
+    <div class="thongke">
+      Tổng sinh viên: <span id="tongSV">0</span> | Điểm trung bình:
+      <span id="dtb">0</span>
+    </div>
+
+    <script src="main42.js"></script>
+  </body>
+</html>

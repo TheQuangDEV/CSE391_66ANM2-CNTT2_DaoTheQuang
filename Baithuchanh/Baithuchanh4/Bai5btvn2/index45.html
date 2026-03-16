@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Multi Step Form</title>
+    <link rel="stylesheet" href="style45.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h2>Đăng ký tài khoản</h2>
+
+      <div class="progress">
+        <div id="progressBar"></div>
+      </div>
+
+      <form id="form">
+        <!-- STEP 1 -->
+        <div class="step active">
+          <h3>Bước 1: Thông tin cá nhân</h3>
+
+          <input type="text" id="hoten" placeholder="Họ tên" />
+
+          <input type="date" id="ngaysinh" />
+
+          <select id="gioitinh">
+            <option value="">Chọn giới tính</option>
+            <option>Nam</option>
+            <option>Nữ</option>
+          </select>
+        </div>
+
+        <!-- STEP 2 -->
+        <div class="step">
+          <h3>Bước 2: Thông tin tài khoản</h3>
+
+          <input type="email" id="email" placeholder="Email" />
+
+          <input type="password" id="password" placeholder="Mật khẩu" />
+
+          <input type="password" id="confirm" placeholder="Xác nhận mật khẩu" />
+        </div>
+
+        <!-- STEP 3 -->
+        <div class="step">
+          <h3>Bước 3: Xác nhận</h3>
+
+          <p id="confirmInfo"></p>
+        </div>
+
+        <div class="buttons">
+          <button type="button" id="prev">Quay lại</button>
+
+          <button type="button" id="next">Tiếp theo</button>
+        </div>
+      </form>
+    </div>
+
+    <script src="main45.js"></script>
+  </body>
+</html>

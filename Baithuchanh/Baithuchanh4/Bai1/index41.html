@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Quản lý điểm sinh viên</title>
+    <link rel="stylesheet" href="style41.css" />
+  </head>
+
+  <body>
+    <h2>Quản lý điểm sinh viên</h2>
+
+    <div class="form">
+      <input type="text" id="hoten" placeholder="Nhập họ tên" />
+      <input
+        type="number"
+        id="diem"
+        placeholder="Nhập điểm (0-10)"
+        min="0"
+        max="10"
+      />
+      <button id="btnThem">Thêm</button>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>STT</th>
+          <th>Họ tên</th>
+          <th>Điểm</th>
+          <th>Xếp loại</th>
+          <th>Thao tác</th>
+        </tr>
+      </thead>
+
+      <tbody id="tableBody"></tbody>
+    </table>
+
+    <div class="thongke">
+      Tổng sinh viên: <span id="tongSV">0</span> | Điểm trung bình:
+      <span id="dtb">0</span>
+    </div>
+
+    <script src="main41.js"></script>
+  </body>
+</html>
